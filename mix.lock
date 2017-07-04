@@ -1,3 +1,4 @@
-%{"cowlib": {:git, "https://github.com/ninenines/cowlib", "93d68bcccc118ef1b72622efc95f9fde5252c3ff", [ref: "master"]},
+%{"cowboy": {:git, "https://github.com/ninenines/cowboy", "2bcb3902570ee4411dfe526e2662a55751d5c1d9", [tag: "2.0.0-pre.10"]},
+  "cowlib": {:git, "https://github.com/ninenines/cowlib", "93d68bcccc118ef1b72622efc95f9fde5252c3ff", [ref: "master"]},
   "gun": {:git, "https://github.com/ninenines/gun", "02fa5f3606b5e18fb21fe48afcc73dad71b36ec9", []},
-  "ranch": {:git, "https://github.com/ninenines/ranch", "55c2a9d623454f372a15e99721a37093d8773b48", [ref: "master"]}}
+  "ranch": {:hex, :ranch, "1.4.0", "10272f95da79340fa7e8774ba7930b901713d272905d0012b06ca6d994f8826b", [:rebar3], [], "hexpm"}}

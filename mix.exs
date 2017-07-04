@@ -15,7 +15,7 @@ defmodule RiemannMux.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
-    [extra_applications: [:logger, :gun]]
+    [extra_applications: [:logger, :gun, :cowboy]]
   end
 
   # Dependencies can be Hex packages:
@@ -29,7 +29,9 @@ defmodule RiemannMux.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:gun, git: "https://github.com/ninenines/gun"}
+      {:cowboy, git: "https://github.com/ninenines/cowboy", tag: "2.0.0-pre.10"},
+      {:gun, git: "https://github.com/ninenines/gun"},
+      {:ranch, "~> 1.4", override: true}
     ]
   end
 end
